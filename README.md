@@ -10,7 +10,7 @@
  [goreport-svg]: https://goreportcard.com/badge/github.com/grokify/go-stackexchange
  [goreport-link]: https://goreportcard.com/report/github.com/grokify/go-stackexchange
  [docs-godoc-svg]: https://img.shields.io/badge/docs-godoc-blue.svg
- [docs-godoc-link]: https://godoc.org/github.com/grokify/go-stackexchange
+ [docs-godoc-link]: https://godoc.org/github.com/grokify/go-stackexchange/client
  [license-svg]: https://img.shields.io/badge/license-MIT-blue.svg
  [license-link]: https://github.com/grokify/go-stackexchange/blob/master/LICENSE
 
