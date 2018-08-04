@@ -7,7 +7,7 @@ import (
 	"github.com/grokify/gotilla/fmt/fmtutil"
 
 	"github.com/grokify/go-stackexchange/client"
-	"github.com/grokify/go-stackexchange/clientutil"
+	"github.com/grokify/go-stackexchange/util"
 )
 
 func main() {
@@ -17,7 +17,7 @@ func main() {
 	site := "stackoverflow"
 	userId := "1908967"
 
-	history, err := stackexchangeutil.GetReputationHistoryAll(apiClient, site, userId)
+	history, err := util.GetReputationHistoryAll(apiClient, site, userId)
 	if err != nil {
 		log.Fatal(err)
 	}

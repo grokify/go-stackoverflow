@@ -1,4 +1,4 @@
-package stackexchangeutil
+package util
 
 import (
 	"context"
