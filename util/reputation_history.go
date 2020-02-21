@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	"github.com/antihax/optional"
-	"github.com/grokify/go-stackexchange/client"
+	stackexchange "github.com/grokify/go-stackoverflow/client"
 	"github.com/grokify/gotilla/time/timeutil"
 	"github.com/grokify/gotilla/type/maputil"
 )

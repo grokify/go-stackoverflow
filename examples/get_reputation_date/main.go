@@ -6,8 +6,8 @@ import (
 
 	"github.com/grokify/gotilla/fmt/fmtutil"
 
-	"github.com/grokify/go-stackexchange/client"
-	"github.com/grokify/go-stackexchange/util"
+	stackexchange "github.com/grokify/go-stackoverflow/client"
+	"github.com/grokify/go-stackoverflow/util"
 )
 
 func main() {

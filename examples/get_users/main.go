@@ -5,20 +5,20 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/grokify/go-stackexchange/client"
+	stackoverflow "github.com/grokify/go-stackoverflow/client"
 	"github.com/grokify/gotilla/fmt/fmtutil"
 )
 
 func main() {
-	apiClient := stackexchange.NewAPIClient(
-		stackexchange.NewConfiguration())
+	apiClient := stackoverflow.NewAPIClient(
+		stackoverflow.NewConfiguration())
 
 	site := "stackoverflow"
 
 	info, resp, err := apiClient.UsersApi.GetUsers(
 		context.Background(),
 		site,
-		&stackexchange.GetUsersOpts{})
+		&stackoverflow.GetUsersOpts{})
 
 	if err != nil {
 		log.Fatal(err)
