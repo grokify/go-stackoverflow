@@ -329,9 +329,7 @@ paths:
       description: >-
         Returns all users on a site.
 
-
         This method returns a list of users.
-
 
         The sorts accepted by this method operate on the following fields of the
         user object:
@@ -412,6 +410,16 @@ paths:
           required: false
           schema:
             type: integer
+        - name: key
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: filter
+          in: query
+          required: false
+          schema:
+            type: string
         - name: site
           in: query
           required: true
@@ -716,6 +724,8 @@ components:
       properties:
         badge_counts:
           $ref: '#/components/schemas/UserBadgeCounts'
+        about_me:
+          type: string
         account_id:
           type: integer
           format: int64
