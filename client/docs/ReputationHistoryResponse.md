@@ -1,6 +1,7 @@
 # ReputationHistoryResponse
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Items** | [**[]ReputationHistory**](ReputationHistory.md) | A list of reputation_history. | [optional] 

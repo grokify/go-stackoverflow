@@ -1,6 +1,7 @@
 # QuestionOwner
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Reputation** | **int32** |  | [optional] 

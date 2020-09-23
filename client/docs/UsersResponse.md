@@ -1,6 +1,7 @@
 # UsersResponse
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Items** | [**[]User**](User.md) |  | [optional] 

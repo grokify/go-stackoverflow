@@ -1,6 +1,7 @@
 # ReputationHistory
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **ReputationHistoryType** | **string** |  | [optional] 

@@ -1,9 +1,11 @@
 # User
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **BadgeCounts** | [**UserBadgeCounts**](UserBadgeCounts.md) |  | [optional] 
+**AboutMe** | **string** |  | [optional] 
 **AccountId** | **int64** |  | [optional] 
 **IsEmployee** | **bool** |  | [optional] 
 **LastModifiedDate** | **int64** |  | [optional] 

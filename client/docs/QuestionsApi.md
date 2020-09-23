@@ -10,7 +10,9 @@ Method | HTTP request | Description
 [**GetUnansweredQuestions**](QuestionsApi.md#GetUnansweredQuestions) | **Get** /questions/unanswered | 
 
 
-# **GetFeaturedQuestions**
+
+## GetFeaturedQuestions
+
 > QuestionsResponse GetFeaturedQuestions(ctx, site, optional)
 
 
@@ -18,14 +20,17 @@ Gets all the questions on the site. This method allows you make fairly flexible 
 
 ### Required Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **site** | **string**|  | [default to stackoverflow]
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**site** | **string**|  | [default to stackoverflow]
  **optional** | ***GetFeaturedQuestionsOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
+
 Optional parameters are passed through a pointer to a GetFeaturedQuestionsOpts struct
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -50,12 +55,16 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 
-# **GetQuestions**
+
+## GetQuestions
+
 > QuestionsResponse GetQuestions(ctx, site, optional)
 
 
@@ -63,14 +72,17 @@ Gets all the questions on the site. This method allows you make fairly flexible 
 
 ### Required Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **site** | **string**|  | [default to stackoverflow]
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**site** | **string**|  | [default to stackoverflow]
  **optional** | ***GetQuestionsOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
+
 Optional parameters are passed through a pointer to a GetQuestionsOpts struct
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -95,12 +107,16 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 
-# **GetQuestionsWithoutAnswers**
+
+## GetQuestionsWithoutAnswers
+
 > QuestionsResponse GetQuestionsWithoutAnswers(ctx, site, optional)
 
 
@@ -108,14 +124,17 @@ Returns questions which have received no answers. Compare with /questions/unansw
 
 ### Required Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **site** | **string**|  | [default to stackoverflow]
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**site** | **string**|  | [default to stackoverflow]
  **optional** | ***GetQuestionsWithoutAnswersOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
+
 Optional parameters are passed through a pointer to a GetQuestionsWithoutAnswersOpts struct
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -140,12 +159,16 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 
-# **GetUnansweredQuestions**
+
+## GetUnansweredQuestions
+
 > QuestionsResponse GetUnansweredQuestions(ctx, site, optional)
 
 
@@ -153,14 +176,17 @@ Gets all the questions on the site. This method allows you make fairly flexible 
 
 ### Required Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **site** | **string**|  | [default to stackoverflow]
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**site** | **string**|  | [default to stackoverflow]
  **optional** | ***GetUnansweredQuestionsOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
+
 Optional parameters are passed through a pointer to a GetUnansweredQuestionsOpts struct
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -185,8 +211,10 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 

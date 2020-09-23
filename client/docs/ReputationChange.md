@@ -1,6 +1,7 @@
 # ReputationChange
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **OnDate** | **int32** |  | [optional] 

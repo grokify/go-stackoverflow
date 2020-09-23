@@ -1,6 +1,7 @@
 # UserBadgeCounts
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Bronze** | **int32** |  | [optional] 
