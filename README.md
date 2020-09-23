@@ -5,14 +5,14 @@
 [![Docs][docs-godoc-svg]][docs-godoc-link]
 [![License][license-svg]][license-link]
 
- [build-status-svg]: https://api.travis-ci.org/grokify/go-stackexchange.svg?branch=master
- [build-status-link]: https://travis-ci.org/grokify/go-stackexchange
- [goreport-svg]: https://goreportcard.com/badge/github.com/grokify/go-stackexchange
- [goreport-link]: https://goreportcard.com/report/github.com/grokify/go-stackexchange
+ [build-status-svg]: https://api.travis-ci.org/grokify/go-stackoverflow.svg?branch=master
+ [build-status-link]: https://travis-ci.org/grokify/go-stackoverflow
+ [goreport-svg]: https://goreportcard.com/badge/github.com/grokify/go-stackoverflow
+ [goreport-link]: https://goreportcard.com/report/github.com/grokify/go-stackoverflow
  [docs-godoc-svg]: https://img.shields.io/badge/docs-godoc-blue.svg
- [docs-godoc-link]: https://godoc.org/github.com/grokify/go-stackexchange/client
+ [docs-godoc-link]: https://godoc.org/github.com/grokify/go-stackoverflow/client
  [license-svg]: https://img.shields.io/badge/license-MIT-blue.svg
- [license-link]: https://github.com/grokify/go-stackexchange/blob/master/LICENSE
+ [license-link]: https://github.com/grokify/go-stackoverflow/blob/master/LICENSE
 
 ## Overview
 
@@ -22,7 +22,7 @@ https://github.com/grokify/api-specs/tree/master/stackexchange
 
 ## Installation
 
-`$ go get github.com/grokify/go-stackexchange/...`
+`$ go get github.com/grokify/go-stackoverflow/...`
 
 ## Usage
 
