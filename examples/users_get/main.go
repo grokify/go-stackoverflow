@@ -11,11 +11,11 @@ import (
 	"github.com/pkg/errors"
 
 	stackoverflow "github.com/grokify/go-stackoverflow/client"
-	"github.com/grokify/gotilla/cmd/cmdutil"
-	"github.com/grokify/gotilla/config"
-	"github.com/grokify/gotilla/fmt/fmtutil"
-	"github.com/grokify/gotilla/io/ioutilmore"
-	"github.com/grokify/gotilla/type/stringsutil"
+	"github.com/grokify/simplego/cmd/cmdutil"
+	"github.com/grokify/simplego/config"
+	"github.com/grokify/simplego/fmt/fmtutil"
+	"github.com/grokify/simplego/io/ioutilmore"
+	"github.com/grokify/simplego/type/stringsutil"
 )
 
 func main() {

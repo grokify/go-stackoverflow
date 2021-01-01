@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/grokify/gotilla/fmt/fmtutil"
+	"github.com/grokify/simplego/fmt/fmtutil"
 
 	stackexchange "github.com/grokify/go-stackoverflow/client"
 	"github.com/grokify/go-stackoverflow/util"

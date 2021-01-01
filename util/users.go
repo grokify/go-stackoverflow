@@ -14,8 +14,8 @@ import (
 	"github.com/antihax/optional"
 	stackoverflow "github.com/grokify/go-stackoverflow/client"
 	"github.com/grokify/gocharts/data/table"
-	"github.com/grokify/gotilla/io/ioutilmore"
-	"github.com/grokify/gotilla/time/timeutil"
+	"github.com/grokify/simplego/io/ioutilmore"
+	"github.com/grokify/simplego/time/timeutil"
 )
 
 const PerPageMax = uint32(100)
