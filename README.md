@@ -10,7 +10,7 @@
  [goreport-svg]: https://goreportcard.com/badge/github.com/grokify/go-stackoverflow
  [goreport-url]: https://goreportcard.com/report/github.com/grokify/go-stackoverflow
  [docs-godoc-svg]: https://pkg.go.dev/badge/github.com/grokify/go-stackoverflow
- [docs-godoc-link]: https://pkg.go.dev/github.com/grokify/go-stackoverflow
+ [docs-godoc-url]: https://pkg.go.dev/github.com/grokify/go-stackoverflow
  [license-svg]: https://img.shields.io/badge/license-MIT-blue.svg
  [license-url]: https://github.com/grokify/go-stackoverflow/blob/master/LICENSE
 
