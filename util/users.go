@@ -55,7 +55,7 @@ func (us *UsersSet) AddUser(user stackoverflow.User) {
 }
 
 func (us *UsersSet) AddUsersResponseFiles(dir string, rx *regexp.Regexp) error {
-	_, filepaths, err := ioutilmore.ReadDirRx(dir, rx, true)
+	_, filepaths, err := ioutilmore.ReadDirMore(dir, rx, true, true)
 	if err != nil {
 		return err
 	}
