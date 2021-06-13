@@ -123,7 +123,7 @@ func (us *UsersSet) Table(cols []string) *table.Table {
 				row = append(row, "")
 			}
 		}
-		tbl.Records = append(tbl.Records, row)
+		tbl.Rows = append(tbl.Rows, row)
 	}
 	return &tbl
 }
