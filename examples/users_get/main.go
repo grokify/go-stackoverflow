@@ -37,7 +37,7 @@ func main() {
 		getFiles = false
 	}
 	if rename {
-		files, _, err := ioutilmore.ReadDirRx(".", regexp.MustCompile(`users.+\.json`), true)
+		files, _, err := ioutilmore.ReadDirMore(".", regexp.MustCompile(`users.+\.json`), true, true)
 		if err != nil {
 			log.Fatal(err)
 		}
