@@ -31,3 +31,20 @@ See examples in the [`examples`](examples) directory. To get started, you can us
 ## Documentation
 
 The auto-generated Swagger files are in the [`client`](client) folder and you can find the Swagger docs there as [`client/README.md`](client/README.md)
+
+## API Coverage
+
+APIs: https://api.stackexchange.com/docs
+
+- [ ] Questions
+  - [x] `questions`
+  - [x] `questions/featured`
+  - [x] `questions/no-answers`
+  - [x] `questions/unanswered`
+- [ ] Users
+  - [x] `users`
+  - [x] `users/{userIds}/reputation`
+  - [x] `users/{userIds}/reputation-history`
+  - [x] `me`
+  - [x] `me/reputation`
+  - [x] `me/reputation-history`
