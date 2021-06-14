@@ -91,10 +91,9 @@ func QuestionsToDataSeries(dataseriesName string, questions []stackoverflow.Ques
 	questions = QuestionsDedupe(questions)
 
 	for _, q := range questions {
-		creationDt := time.Unix(int64(q.CreationDate), 0)
 		ds.AddItem(statictimeseries.DataItem{
 			SeriesName: dataseriesName,
-			Time:       creationDt.UTC(),
+			Time:       time.Unix(int64(q.CreationDate), 0).UTC(),
 			Value:      1})
 	}
 	return ds, nil
