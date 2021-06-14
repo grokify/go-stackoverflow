@@ -18,8 +18,6 @@ import (
 	"github.com/grokify/simplego/time/timeutil"
 )
 
-const PerPageMax = uint32(100)
-
 // UsersResponseFromFile reads afile into a `stackoverflow.UsersResponse`
 // struct.
 func UsersResponseFromFile(file string) (stackoverflow.UsersResponse, error) {

@@ -6,6 +6,7 @@ import (
 
 const (
 	SiteStackOverflow = "stackoverflow"
+	PerPageMax        = uint32(100)
 )
 
 func APIErrorBody(err error) []byte {
