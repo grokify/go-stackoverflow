@@ -87,6 +87,7 @@ func QuestionsDedupe(questions []stackoverflow.Question) []stackoverflow.Questio
 
 func QuestionsToDataSeries(dataseriesName string, questions []stackoverflow.Question) (statictimeseries.DataSeries, error) {
 	ds := statictimeseries.NewDataSeries()
+	ds.SeriesName = dataseriesName
 	questions = QuestionsDedupe(questions)
 
 	for _, q := range questions {
