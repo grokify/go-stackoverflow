@@ -1,4 +1,4 @@
-# StackExchange / Stack Overflow Go SDK
+# Stack Overflow / StackExchange Go SDK
 
 [![Build Status][build-status-svg]][build-status-url]
 [![Go Report Card][goreport-svg]][goreport-url]
