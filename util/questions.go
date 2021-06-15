@@ -58,7 +58,22 @@ func GetQuestionsAll(apiClient *stackoverflow.APIClient, site string, opts *stac
 	return questions, nil
 }
 
-func ReadQuestionsFile(file string) ([]stackoverflow.Question, error) {
+func ReadFileQuestionsResponse(file string) (stackoverflow.QuestionsResponse, error) {
+	var resp stackoverflow.QuestionsResponse
+
+	bytes, err := ioutil.ReadFile(file)
+	if err != nil {
+		return resp, err
+	}
+	err = json.Unmarshal(bytes, &resp)
+	if err != nil {
+		return resp, err
+	}
+	resp.Items = QuestionsDedupe(resp.Items)
+	return resp, nil
+}
+
+func ReadFileQuestions(file string) ([]stackoverflow.Question, error) {
 	questions := []stackoverflow.Question{}
 
 	bytes, err := ioutil.ReadFile(file)
@@ -85,7 +100,7 @@ func QuestionsDedupe(questions []stackoverflow.Question) []stackoverflow.Questio
 	return deduped
 }
 
-func QuestionsToDataSeries(dataseriesName string, questions []stackoverflow.Question) (statictimeseries.DataSeries, error) {
+func QuestionsToDataSeries(dataseriesName string, questions []stackoverflow.Question) statictimeseries.DataSeries {
 	ds := statictimeseries.NewDataSeries()
 	ds.SeriesName = dataseriesName
 	questions = QuestionsDedupe(questions)
@@ -96,5 +111,17 @@ func QuestionsToDataSeries(dataseriesName string, questions []stackoverflow.Ques
 			Time:       time.Unix(int64(q.CreationDate), 0).UTC(),
 			Value:      1})
 	}
-	return ds, nil
+	return ds
+}
+
+func QuestionsToDataSeriesSet(dss statictimeseries.DataSeriesSet, dataseriesName string, questions []stackoverflow.Question) statictimeseries.DataSeriesSet {
+	questions = QuestionsDedupe(questions)
+
+	for _, q := range questions {
+		dss.AddItem(statictimeseries.DataItem{
+			SeriesName: dataseriesName,
+			Time:       time.Unix(int64(q.CreationDate), 0).UTC(),
+			Value:      1})
+	}
+	return dss
 }
