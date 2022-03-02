@@ -11,11 +11,12 @@ import (
 	"github.com/pkg/errors"
 
 	stackoverflow "github.com/grokify/go-stackoverflow/client"
-	"github.com/grokify/simplego/cmd/cmdutil"
-	"github.com/grokify/simplego/config"
-	"github.com/grokify/simplego/fmt/fmtutil"
-	"github.com/grokify/simplego/io/ioutilmore"
-	"github.com/grokify/simplego/type/stringsutil"
+	"github.com/grokify/mogo/config"
+	"github.com/grokify/mogo/fmt/fmtutil"
+	"github.com/grokify/mogo/io/ioutilmore"
+	"github.com/grokify/mogo/os/executil"
+	"github.com/grokify/mogo/os/osutil"
+	"github.com/grokify/mogo/type/stringsutil"
 )
 
 func main() {
@@ -37,7 +38,7 @@ func main() {
 		getFiles = false
 	}
 	if rename {
-		files, _, err := ioutilmore.ReadDirMore(".", regexp.MustCompile(`users.+\.json`), true, true)
+		files, err := osutil.ReadDirMore(".", regexp.MustCompile(`users.+\.json`), false, true, false)
 		if err != nil {
 			log.Fatal(err)
 		}
@@ -63,7 +64,7 @@ func main() {
 				fmt.Println(newfile)
 				cmd := "mv " + fi.Name() + " " + newfile
 				fmt.Println(cmd)
-				_, _, err = cmdutil.ExecSimple(cmd)
+				_, _, err = executil.ExecSimple(cmd)
 				if err != nil {
 					log.Fatal(err)
 				}

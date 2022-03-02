@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"os"
+	"path/filepath"
 	"regexp"
 	"strconv"
 	"strings"
@@ -14,8 +15,8 @@ import (
 	"github.com/antihax/optional"
 	stackoverflow "github.com/grokify/go-stackoverflow/client"
 	"github.com/grokify/gocharts/data/table"
-	"github.com/grokify/simplego/io/ioutilmore"
-	"github.com/grokify/simplego/time/timeutil"
+	"github.com/grokify/mogo/os/osutil"
+	"github.com/grokify/mogo/time/timeutil"
 )
 
 // UsersResponseFromFile reads afile into a `stackoverflow.UsersResponse`
@@ -53,12 +54,12 @@ func (us *UsersSet) AddUser(user stackoverflow.User) {
 }
 
 func (us *UsersSet) AddUsersResponseFiles(dir string, rx *regexp.Regexp) error {
-	_, filepaths, err := ioutilmore.ReadDirMore(dir, rx, true, true)
+	entries, err := osutil.ReadDirMore(dir, rx, false, true, false)
 	if err != nil {
 		return err
 	}
-	for _, filepath := range filepaths {
-		err := us.AddUsersResponseFile(filepath)
+	for _, entry := range entries {
+		err := us.AddUsersResponseFile(filepath.Join(dir, entry.Name()))
 		if err != nil {
 			return err
 		}
@@ -97,7 +98,7 @@ func (us *UsersSet) Table(cols []string) *table.Table {
 	if len(cols) == 0 {
 		cols = []string{"display_name", "reputation", "last_access_date", "location", "link", "about_me"}
 	}
-	tbl := table.NewTable()
+	tbl := table.NewTable("")
 	tbl.Columns = cols
 	for _, usr := range us.UsersMap {
 		row := []string{}

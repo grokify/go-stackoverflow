@@ -7,7 +7,7 @@ import (
 	"github.com/antihax/optional"
 	stackoverflow "github.com/grokify/go-stackoverflow/client"
 	"github.com/grokify/go-stackoverflow/util"
-	"github.com/grokify/simplego/io/ioutilmore"
+	"github.com/grokify/mogo/io/ioutilmore"
 	"github.com/jessevdk/go-flags"
 )
 

@@ -10,7 +10,7 @@ import (
 
 	"github.com/antihax/optional"
 	stackoverflow "github.com/grokify/go-stackoverflow/client"
-	"github.com/grokify/gocharts/data/statictimeseries"
+	"github.com/grokify/gocharts/data/timeseries"
 	"github.com/pkg/errors"
 )
 
@@ -100,13 +100,12 @@ func QuestionsDedupe(questions []stackoverflow.Question) []stackoverflow.Questio
 	return deduped
 }
 
-func QuestionsToDataSeries(dataseriesName string, questions []stackoverflow.Question) statictimeseries.DataSeries {
-	ds := statictimeseries.NewDataSeries()
-	ds.SeriesName = dataseriesName
+func QuestionsToDataSeries(dataseriesName string, questions []stackoverflow.Question) timeseries.TimeSeries {
+	ds := timeseries.NewTimeSeries(dataseriesName)
 	questions = QuestionsDedupe(questions)
 
 	for _, q := range questions {
-		ds.AddItem(statictimeseries.DataItem{
+		ds.AddItems(timeseries.TimeItem{
 			SeriesName: dataseriesName,
 			Time:       time.Unix(int64(q.CreationDate), 0).UTC(),
 			Value:      1})
@@ -114,11 +113,11 @@ func QuestionsToDataSeries(dataseriesName string, questions []stackoverflow.Ques
 	return ds
 }
 
-func QuestionsToDataSeriesSet(dss statictimeseries.DataSeriesSet, dataseriesName string, questions []stackoverflow.Question) statictimeseries.DataSeriesSet {
+func QuestionsToDataSeriesSet(dss timeseries.TimeSeriesSet, dataseriesName string, questions []stackoverflow.Question) timeseries.TimeSeriesSet {
 	questions = QuestionsDedupe(questions)
 
 	for _, q := range questions {
-		dss.AddItem(statictimeseries.DataItem{
+		dss.AddItems(timeseries.TimeItem{
 			SeriesName: dataseriesName,
 			Time:       time.Unix(int64(q.CreationDate), 0).UTC(),
 			Value:      1})

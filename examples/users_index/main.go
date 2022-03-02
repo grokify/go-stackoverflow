@@ -7,8 +7,8 @@ import (
 
 	"github.com/grokify/go-stackoverflow/util"
 	"github.com/grokify/gocharts/data/table"
-	"github.com/grokify/simplego/config"
-	"github.com/grokify/simplego/fmt/fmtutil"
+	"github.com/grokify/mogo/config"
+	"github.com/grokify/mogo/fmt/fmtutil"
 )
 
 func main() {

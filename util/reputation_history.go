@@ -6,8 +6,8 @@ import (
 
 	"github.com/antihax/optional"
 	stackexchange "github.com/grokify/go-stackoverflow/client"
-	"github.com/grokify/simplego/time/timeutil"
-	"github.com/grokify/simplego/type/maputil"
+	"github.com/grokify/mogo/time/timeutil"
+	"github.com/grokify/mogo/type/maputil"
 )
 
 type History struct {
