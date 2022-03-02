@@ -38,16 +38,13 @@ func main() {
 		}
 	}
 
-	questions, err := util.ReadQuestionsFile(args.OutputFile)
+	questions, err := util.ReadFileQuestions(args.OutputFile)
 	if err != nil {
 		log.Fatal(err)
 	}
 	fmt.Printf("QUESTIONS [%d]\n", len(questions))
 
-	ds, err := util.QuestionsToDataSeries("questions by month", questions)
-	if err != nil {
-		log.Fatal(err)
-	}
+	ds := util.QuestionsToDataSeries("questions by month", questions)
 	ds = ds.ToMonth(true)
 	err = ds.WriteXLSX("_question_count_month.xlsx", "Q per month", "month", "count")
 	if err != nil {
