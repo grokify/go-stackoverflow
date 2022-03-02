@@ -11,7 +11,7 @@ import (
 	"github.com/antihax/optional"
 	stackoverflow "github.com/grokify/go-stackoverflow/client"
 	"github.com/grokify/gocharts/data/timeseries"
-	"github.com/pkg/errors"
+	"github.com/grokify/mogo/errors/errorsutil"
 )
 
 func GetQuestionsAll(apiClient *stackoverflow.APIClient, site string, opts *stackoverflow.GetQuestionsOpts) ([]stackoverflow.Question, error) {
@@ -35,7 +35,7 @@ func GetQuestionsAll(apiClient *stackoverflow.APIClient, site string, opts *stac
 		context.Background(), site, opts)
 	if err != nil {
 		httpBody := APIErrorBody(err)
-		return questions, errors.Wrap(err, string(httpBody))
+		return questions, errorsutil.Wrap(err, string(httpBody))
 	} else if resp.StatusCode > 299 {
 		httpBody := APIErrorBody(err)
 		return questions, fmt.Errorf("%s API HTTP status [%d]", string(httpBody), resp.StatusCode)

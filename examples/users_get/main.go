@@ -8,10 +8,10 @@ import (
 	"regexp"
 
 	"github.com/antihax/optional"
-	"github.com/pkg/errors"
 
 	stackoverflow "github.com/grokify/go-stackoverflow/client"
 	"github.com/grokify/mogo/config"
+	"github.com/grokify/mogo/errors/errorsutil"
 	"github.com/grokify/mogo/fmt/fmtutil"
 	"github.com/grokify/mogo/io/ioutilmore"
 	"github.com/grokify/mogo/os/executil"
@@ -133,7 +133,7 @@ func GetMore(apiClient *stackoverflow.APIClient, site string, opts *stackoverflo
 		info, resp, err := apiClient.UsersApi.GetUsers(
 			context.Background(), site, opts)
 		if err != nil {
-			return errors.Wrap(err, fmt.Sprintf("Page Num [%v]", pageNum))
+			return errorsutil.Wrap(err, fmt.Sprintf("Page Num [%v]", pageNum))
 		} else if resp.StatusCode >= 300 {
 			return fmt.Errorf("Page Num [%v] Status [%v]", pageNum, resp.StatusCode)
 		}
