@@ -14,7 +14,7 @@ import (
 
 	"github.com/antihax/optional"
 	stackoverflow "github.com/grokify/go-stackoverflow/client"
-	"github.com/grokify/gocharts/data/table"
+	"github.com/grokify/gocharts/v2/data/table"
 	"github.com/grokify/mogo/os/osutil"
 	"github.com/grokify/mogo/time/timeutil"
 )

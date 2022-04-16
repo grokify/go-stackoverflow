@@ -10,7 +10,7 @@ import (
 
 	"github.com/antihax/optional"
 	stackoverflow "github.com/grokify/go-stackoverflow/client"
-	"github.com/grokify/gocharts/data/timeseries"
+	"github.com/grokify/gocharts/v2/data/timeseries"
 	"github.com/grokify/mogo/errors/errorsutil"
 )
 
