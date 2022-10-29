@@ -30,7 +30,7 @@ func (history *History) ReputationChangeByDayMap() map[string]int32 {
 func (history *History) ReputationChangeByDaySlice() []DayReputation {
 	days := []DayReputation{}
 	data := history.ReputationChangeByDayMap()
-	dates := maputil.StringKeysSorted(data)
+	dates := maputil.StringKeys(data, nil, true)
 	for _, date := range dates {
 		if rep, ok := data[date]; ok {
 			dayRep := DayReputation{
