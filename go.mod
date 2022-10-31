@@ -4,8 +4,8 @@ go 1.18
 
 require (
 	github.com/antihax/optional v1.0.0
-	github.com/grokify/elastirad-go v0.4.3
-	github.com/grokify/gocharts/v2 v2.8.2
+	github.com/grokify/elastirad-go v0.4.4
+	github.com/grokify/gocharts/v2 v2.8.3
 	github.com/grokify/mogo v0.40.13
 	github.com/jessevdk/go-flags v1.5.0
 	golang.org/x/oauth2 v0.1.0
