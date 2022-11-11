@@ -8,7 +8,7 @@ require (
 	github.com/grokify/gocharts/v2 v2.8.3
 	github.com/grokify/mogo v0.40.13
 	github.com/jessevdk/go-flags v1.5.0
-	golang.org/x/oauth2 v0.1.0
+	golang.org/x/oauth2 v0.2.0
 )
 
 require (
@@ -28,8 +28,8 @@ require (
 	github.com/xuri/excelize/v2 v2.6.1 // indirect
 	github.com/xuri/nfp v0.0.0-20220409054826-5e722a1d9e22 // indirect
 	golang.org/x/crypto v0.1.0 // indirect
-	golang.org/x/net v0.1.0 // indirect
-	golang.org/x/sys v0.1.0 // indirect
+	golang.org/x/net v0.2.0 // indirect
+	golang.org/x/sys v0.2.0 // indirect
 	golang.org/x/text v0.4.0 // indirect
 	gonum.org/v1/gonum v0.12.0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
