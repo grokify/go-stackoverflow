@@ -6,7 +6,7 @@ require (
 	github.com/antihax/optional v1.0.0
 	github.com/grokify/elastirad-go v0.4.5
 	github.com/grokify/gocharts/v2 v2.8.5
-	github.com/grokify/mogo v0.41.6
+	github.com/grokify/mogo v0.41.10
 	github.com/jessevdk/go-flags v1.5.0
 	golang.org/x/oauth2 v0.2.0
 )
