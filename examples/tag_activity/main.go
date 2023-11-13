@@ -7,7 +7,7 @@ import (
 	"github.com/antihax/optional"
 	stackoverflow "github.com/grokify/go-stackoverflow/client"
 	"github.com/grokify/go-stackoverflow/util"
-	"github.com/grokify/mogo/io/ioutilmore"
+	"github.com/grokify/mogo/encoding/jsonutil"
 	"github.com/jessevdk/go-flags"
 )
 
@@ -32,7 +32,7 @@ func main() {
 		if err != nil {
 			log.Fatal(err)
 		}
-		err = ioutilmore.WriteFileJSON(args.OutputFile, questions, 0644, "", "  ")
+		err = jsonutil.WriteFile(args.OutputFile, questions, "", "  ", 0600)
 		if err != nil {
 			log.Fatal(err)
 		}

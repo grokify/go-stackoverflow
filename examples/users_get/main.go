@@ -11,9 +11,9 @@ import (
 
 	stackoverflow "github.com/grokify/go-stackoverflow/client"
 	"github.com/grokify/mogo/config"
+	"github.com/grokify/mogo/encoding/jsonutil"
 	"github.com/grokify/mogo/errors/errorsutil"
 	"github.com/grokify/mogo/fmt/fmtutil"
-	"github.com/grokify/mogo/io/ioutilmore"
 	"github.com/grokify/mogo/os/executil"
 	"github.com/grokify/mogo/os/osutil"
 	"github.com/grokify/mogo/type/stringsutil"
@@ -138,7 +138,7 @@ func GetMore(apiClient *stackoverflow.APIClient, site string, opts *stackoverflo
 			return fmt.Errorf("Page Num [%v] Status [%v]", pageNum, resp.StatusCode)
 		}
 		filename := fmt.Sprintf("users_pg-%v-%v.json", pageNum, numPages)
-		err = ioutilmore.WriteFileJSON(filename, info, 0644, "", "  ")
+		err = jsonutil.WriteFile(filename, info, "", "  ", 0600)
 		if err != nil {
 			return fmt.Errorf("Page [%v] Error [%v]", pageNum, err.Error())
 		}
