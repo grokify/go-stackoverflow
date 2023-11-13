@@ -12,7 +12,7 @@ import (
 )
 
 func main() {
-	loaded, err := config.LoadDotEnvSkipEmptyInfo(".env")
+	loaded, err := config.LoadDotEnv([]string{".env"}, 1)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -37,7 +37,7 @@ func main() {
 	}
 	tbl := usersSet2.Table([]string{})
 	tbl.Name = "PM"
-	table.WriteXLSX("_users.xlsx", tbl)
+	table.WriteXLSX("_users.xlsx", []*table.Table{tbl})
 
 	fmt.Println("DONE")
 }

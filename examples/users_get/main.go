@@ -20,7 +20,7 @@ import (
 )
 
 func main() {
-	loaded, err := config.LoadDotEnvSkipEmptyInfo(".env")
+	loaded, err := config.LoadDotEnv([]string{".env"}, 1)
 	if err != nil {
 		log.Fatal(err)
 	}
