@@ -6,7 +6,7 @@ go 1.21
 
 require (
 	github.com/antihax/optional v1.0.0
-	github.com/grokify/elastirad-go v0.4.13
+	github.com/grokify/elastirad-go v0.4.14
 	github.com/grokify/gocharts/v2 v2.15.2
 	github.com/grokify/mogo v0.61.0
 	github.com/jessevdk/go-flags v1.5.0
