@@ -1,6 +1,6 @@
 package elasticsearch
 
-import "github.com/grokify/elastirad-go/models/es5"
+import "github.com/grokify/goelastic/models/es5"
 
 func CreateUsersRequestBody(shardCount, replicaCount uint32, objectName string) es5.CreateIndexBody {
 	if shardCount == 0 {
