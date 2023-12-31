@@ -13,12 +13,12 @@ github.com/golang/protobuf v1.5.3 h1:KhyjKVUg7Usr/dYsdSqoFveMYd5ko72D+zANwlG1mmg
 github.com/golang/protobuf v1.5.3/go.mod h1:XVQd3VNwM+JqD3oG2Ue2ip4fOMUkwXdXDdiuN0vRsmY=
 github.com/golang/snappy v0.0.3/go.mod h1:/XxbfmMg8lxefKM7IXC3fBNl/7bRcc72aCRzEWrmP2Q=
 github.com/google/go-cmp v0.5.5/go.mod h1:v8dTdLbMG2kIc/vJvl+f65V22dbkXbowE6jgT/gNBxE=
-github.com/google/go-cmp v0.5.9 h1:O2Tfq5qg4qc4AmwVlvv0oLiVAGB7enBSJ2x2DqQFi38=
-github.com/google/go-cmp v0.5.9/go.mod h1:17dUlkBOakJ0+DkrSSNjCkIjxS6bF9zb3elmeNGIjoY=
+github.com/google/go-cmp v0.6.0 h1:ofyhxvXcZhMsU5ulbFiLKl/XBFqE1GSq7atu8tAmTRI=
+github.com/google/go-cmp v0.6.0/go.mod h1:17dUlkBOakJ0+DkrSSNjCkIjxS6bF9zb3elmeNGIjoY=
 github.com/grokify/base36 v1.0.5 h1:iUgnt40hrPtn3M2gjU4Darow5ikf8xWXrTuMWTLziCk=
 github.com/grokify/base36 v1.0.5/go.mod h1:L+1aaUBGfp5Ctar7KCS5G9uPABo1Ccu1Ct2iQAuhOJ4=
-github.com/grokify/elastirad-go v0.4.15 h1:3cuZ6lVUpWO68Nthb5wCatyrWKEkhd/+qvsMhDlVf/c=
-github.com/grokify/elastirad-go v0.4.15/go.mod h1:RO3IJh7ohO1/jTOdGdduT/PLfll5wsiu5m9CkJtCIGg=
+github.com/grokify/elastirad-go v0.4.16 h1:cZ8x50YIUiUR8Gu1hki3rb1uQ39MllWu5h/ik6BnTag=
+github.com/grokify/elastirad-go v0.4.16/go.mod h1:J+/p636JFWy80XKIw9ytzhaLe6Y42TGd5uScKFDd2y8=
 github.com/grokify/gocharts/v2 v2.16.1 h1:bhf5IiM9gbM8QGgm1iHokJro+VIlICbJbQr5f922YDQ=
 github.com/grokify/gocharts/v2 v2.16.1/go.mod h1:LehLYrHxmnlqtTcNKio85aH38R3fItawopffWgNbwhU=
 github.com/grokify/mogo v0.62.5 h1:qqkqpA38q3w3kC6ti9NyQbT3uVCODsRL1ymKs6tJjR4=
