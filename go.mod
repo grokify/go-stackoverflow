@@ -10,12 +10,11 @@ require (
 	github.com/grokify/goelastic v0.6.1
 	github.com/grokify/mogo v0.63.5
 	github.com/jessevdk/go-flags v1.5.0
-	golang.org/x/oauth2 v0.18.0
+	golang.org/x/oauth2 v0.19.0
 )
 
 require (
 	github.com/caarlos0/env/v6 v6.10.1 // indirect
-	github.com/golang/protobuf v1.5.4 // indirect
 	github.com/grokify/base36 v1.0.5 // indirect
 	github.com/huandu/xstrings v1.4.0 // indirect
 	github.com/joho/godotenv v1.5.1 // indirect
@@ -33,6 +32,4 @@ require (
 	golang.org/x/sys v0.18.0 // indirect
 	golang.org/x/text v0.14.0 // indirect
 	gonum.org/v1/gonum v0.15.0 // indirect
-	google.golang.org/appengine v1.6.8 // indirect
-	google.golang.org/protobuf v1.33.0 // indirect
 )
