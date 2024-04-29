@@ -8,7 +8,7 @@ require (
 	github.com/antihax/optional v1.0.0
 	github.com/grokify/gocharts/v2 v2.18.5
 	github.com/grokify/goelastic v0.6.3
-	github.com/grokify/mogo v0.63.8
+	github.com/grokify/mogo v0.63.10
 	github.com/jessevdk/go-flags v1.5.0
 	golang.org/x/oauth2 v0.19.0
 )
@@ -28,7 +28,7 @@ require (
 	github.com/xuri/excelize/v2 v2.8.1 // indirect
 	github.com/xuri/nfp v0.0.0-20240318013403-ab9948c2c4a7 // indirect
 	golang.org/x/crypto v0.22.0 // indirect
-	golang.org/x/exp v0.0.0-20240409090435-93d18d7e34b8 // indirect
+	golang.org/x/exp v0.0.0-20240416160154-fe59bbe5cc7f // indirect
 	golang.org/x/net v0.24.0 // indirect
 	golang.org/x/sys v0.19.0 // indirect
 	golang.org/x/text v0.14.0 // indirect
