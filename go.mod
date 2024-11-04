@@ -8,7 +8,7 @@ require (
 	github.com/antihax/optional v1.0.0
 	github.com/grokify/gocharts/v2 v2.20.3
 	github.com/grokify/goelastic v0.6.6
-	github.com/grokify/mogo v0.65.0
+	github.com/grokify/mogo v0.65.1
 	github.com/jessevdk/go-flags v1.6.1
 	golang.org/x/oauth2 v0.23.0
 )
