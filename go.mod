@@ -10,7 +10,7 @@ require (
 	github.com/grokify/goelastic v0.6.6
 	github.com/grokify/mogo v0.65.0
 	github.com/jessevdk/go-flags v1.6.1
-	golang.org/x/oauth2 v0.23.0
+	golang.org/x/oauth2 v0.24.0
 )
 
 require (
